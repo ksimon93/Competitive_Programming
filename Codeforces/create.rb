@@ -1,0 +1,7 @@
+file = File.open("#{ARGV[0]}.java", 'w+') 
+file.puts("import java.util.Scanner;")
+file.puts("public class #{ARGV[0]} {\n")
+file.puts("\tpublic static void main(String[] args) {\n")
+file.puts("\t\tScanner in = new Scanner(System.in);\n")
+file.puts("\t}")
+file.puts("}")
